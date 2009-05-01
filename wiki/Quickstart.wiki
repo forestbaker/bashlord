@@ -10,12 +10,28 @@ mkdir ~/.bashlord
 {{{
 svn co http://bashlord.googlecode.com/svn/trunk ~/.bashlord/
 }}}
- # add the following lines to your ~/.bashrc configuration file
+ # add the following lines at the end of your ~/.bashrc configuration file
 {{{
 # Bashlord
 if [ -f ~/.bashlord/bashrc ]; then
     . ~/.bashlord/bashrc
 fi
 }}}
+# Reload your bash environment 
+{{{
+. ~/.bashrc
+}}}
 
 = Using bashlord =
+Let's start with a basic example:
+
+I want to create a shell script to backup my web browser bookmarks.
+
+*Step 1* : I will ask bashlord to create a new script :
+{{{
+bashlord add bkp-bookmarks
+}}}
+
+From here a script and an alias have been created. The name of your script is already a command available from your shell. This command execute your script.
+
+*Step 2* : I will edit my script
