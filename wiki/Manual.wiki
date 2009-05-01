@@ -1,0 +1,43 @@
+#Bashlord manual
+
+= Bashlord commands =
+Bashlord commands are use to perform commons operation as adding, deleting, listing scripts, etc...
+
+Syntax :
+{{{
+bashlord <command>
+}}}
+
+Please find below the list of available bashlord command:
+==add==
+Add a new script
+
+Syntax :
+{{{
+bashlord add <my script name>
+}}}
+==delete-all==
+Delete all scripts in the bashlord script pool
+==delete==
+Delete a script
+
+{{{
+bashlord delete <my script to delete name>
+}}}
+==edit==
+Edit a script
+
+{{{
+bashlord edit <my script to edit name>
+}}}
+==help==
+Display all available bashlord commands
+
+{{{
+bashlord edit <my script to edit name>
+}}}
+==list==
+==reload==
+==version==
+
+= Details =
