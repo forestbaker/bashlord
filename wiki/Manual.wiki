@@ -19,13 +19,13 @@ bashlord add <my script name>
 ==delete-all==
 Delete all scripts in the bashlord script pool
 ==delete==
-Delete a script
+Delete a specific script
 
 {{{
 bashlord delete <my script to delete name>
 }}}
 ==edit==
-Edit a script
+Edit a specific script
 
 {{{
 bashlord edit <my script to edit name>
@@ -37,7 +37,20 @@ Display all available bashlord commands
 bashlord edit <my script to edit name>
 }}}
 ==list==
-==reload==
-==version==
+List all the scripts currently in the bashlord script pool
 
-= Details =
+{{{
+bashlord list
+}}}
+==reload==
+Regenerate bashrc file wich extends your standard ~/.bashrc file and reload bash environment. 
+You should not have to perform this operation manualy.
+
+{{{
+bashlord reload
+}}}
+==version==
+Display your current bashlord version
+{{{
+bashlord version
+}}}
