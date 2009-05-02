@@ -6,6 +6,6 @@ then
 	shift
 	. $BASHLORD_SCRIPT $@
 else
-	echo "Bashlord wrong option !"
+	echo "Bashlord wrong option: $BASHLORD_SCRIPT"
 	exit 1
 fi
