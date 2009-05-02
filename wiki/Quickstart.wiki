@@ -1,6 +1,23 @@
 #Install and use bashlord in 5 minutes
 
 = Installation =
+ # Download the latest bashlord revision
+ # Extract archive to your home directory
+{{{
+tar xzvf bashlord.tar.gz ~/
+}}}
+# add the following lines at the end of your ~/.bashrc configuration file
+{{{
+# Bashlord
+if [ -f ~/.bashlord/bashrc ]; then
+    . ~/.bashlord/bashrc
+fi
+}}}
+# Reload your bash environment 
+{{{
+. ~/.bashrc
+}}}
+= Installation using SVN =
 
  # Create a directory named '.bashlord' in your home folder
 {{{
