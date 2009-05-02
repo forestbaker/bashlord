@@ -1,0 +1,45 @@
+#Installation et utilisation bashlord en 5 minutes
+
+= Installation =
+ # Téléchargez la dernière version disponible: [http://bashlord.googlecode.com/files/bashlord.tar.gz bashlord.tar.gz]
+ # Décompressez l'archive à la racine de votre répertoire utilisateur
+{{{
+tar xzvf bashlord.tar.gz ~/
+}}}
+ # Ajoutez les lignes suivantes à la fin de votre fichier de configuration ~/.bashrc 
+{{{
+# Bashlord
+if [ -f ~/.bashlord/bashrc ]; then
+    . ~/.bashlord/bashrc
+fi
+}}}
+ # Rechargez la configuration bash
+{{{
+. ~/.bashrc
+}}}
+
+= Utilisation de bashlord =
+Commençons avec un exemple simple :
+
+Je veux créer un script shell afin de sauvegarder les raccourcis de mon navigateur internet.
+
+==Etape 1: Création du script avec bashlord==
+{{{
+bashlord add bkp-bookmarks
+}}}
+
+Un script ainsi qu'un alias ont été créés. Le nom de votre script est également le nom d'une commande directement disponible dans votre shell. Cette commande exécute votre script.
+
+==Etape 2: Editer mon script==
+La commande suivante va ouvrir mon script shell dans vim. J'y ajoute les commande me permettant de faire la sauvegarde des raccourcis.
+{{{
+bashlord edit bkp-bookmarks
+}}}
+
+Note: Vous pouvez configurer 'bashlord edit' afin d'ouvrir les scripts avec votre editeur favori simplement en remplaçant 'vim' dans le fichier de configuration suivant : ~∕.bashlord/conf.d/00_bashlord_init
+
+==Etape 3: On savoure et on profite ==
+Maintenant je peux taper la commande à tout moment pour sauvegarder mes raccourcis
+ {{{
+bkp-bookmarks
+}}}
