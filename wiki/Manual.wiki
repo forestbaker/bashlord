@@ -1,5 +1,28 @@
 #Bashlord manual
 
+= Installation using SVN =
+
+ # Create a directory named '.bashlord' in your home folder
+{{{
+mkdir ~/.bashlord
+}}}
+ # Checkout the whole source code from SVN in ~/.bashlord 
+{{{
+svn co http://bashlord.googlecode.com/svn/trunk ~/.bashlord/
+}}}
+ # add the following lines at the end of your ~/.bashrc configuration file
+{{{
+# Bashlord
+if [ -f ~/.bashlord/bashrc ]; then
+    . ~/.bashlord/bashrc
+fi
+}}}
+# Reload your bash environment 
+{{{
+. ~/.bashrc
+}}}
+
+
 = Bashlord commands =
 Bashlord commands are use to perform commons operation as adding, deleting, listing scripts, etc...
 
