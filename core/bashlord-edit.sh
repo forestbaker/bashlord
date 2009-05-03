@@ -6,8 +6,8 @@ SCRIPT=$BASHLORD_HOME/scripts/$1.sh
 if [ ! -e $SCRIPT ]
 then
         echo "Script $SCRIPT doesn't exists !"	
-	exit 1;		
+	return 1
 else
 	#if the script already exists we return an error
-        exec $BASHLORD_EDITOR $SCRIPT
+        $BASHLORD_EDITOR $SCRIPT
 fi
