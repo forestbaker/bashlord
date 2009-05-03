@@ -21,5 +21,5 @@ then
 else
 	#if the script already exists we return an error
         echo "Script $NEW_SCRIPT already exists !"	
-	exit 1;		
+	return 1;		
 fi

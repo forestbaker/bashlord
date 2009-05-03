@@ -3,11 +3,11 @@ echo "Type 'yes' to confirm you really want to erase all your bashlord's scripts
 read CONFIRM
 
 #if erase all user's scripts has not been confirmed
-if [ ! $CONFIRM -a $CONFIRM == "yes" ]
+if [ "$CONFIRM" != "yes" ]
 then
 	#operation is cancelled
         echo "Operation cancelled"
-	exit 0
+	return 0
 fi
 	
 #removing user's script files
