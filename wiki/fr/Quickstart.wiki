@@ -1,7 +1,7 @@
 #Installation et utilisation bashlord en 5 minutes
 
 = Installation =
- # Téléchargez la [http://bashlord.googlecode.com/files/bashlord.tar.gz dernière version disponible]
+ # Téléchargez la [http://bashlord.googlecode.com/files/bashlord-0.1.tar.gz dernière version disponible]
  # Décompressez l'archive à la racine de votre répertoire utilisateur
 {{{
 tar xzvf bashlord.tar.gz ~/
