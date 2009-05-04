@@ -1,7 +1,7 @@
 #Install and use bashlord in 5 minutes
 
 = Installation =
- # Download [http://bashlord.googlecode.com/files/bashlord-0.1.tar.gz the latest bashlord revision]
+ # Download [http://bashlord.googlecode.com/files/bashlord-0.11.tar.gz the latest bashlord revision]
  # Extract archive to your home directory
 {{{
 tar xzvf bashlord.tar.gz ~/
