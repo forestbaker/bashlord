@@ -1,6 +1,6 @@
 # Bashlord Env
 export BASHLORD_HOME=~/.bashlord
-export BASHLORD_VERSION=0.1
+export BASHLORD_VERSION=0.11
 export BASHLORD_EDITOR=vim
 
 # Bashlord Aliases
