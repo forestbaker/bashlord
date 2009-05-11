@@ -2,10 +2,6 @@
 
 = Installation using SVN =
 
- # Create a directory named '.bashlord' in your home folder
-{{{
-mkdir ~/.bashlord
-}}}
  # Checkout the whole source code from SVN in ~/.bashlord 
 {{{
 svn co http://bashlord.googlecode.com/svn/trunk ~/.bashlord/
