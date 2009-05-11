@@ -21,7 +21,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with Bashlord.  If not, see <http://www.gnu.org/licenses/>.
 
-EXPORTED_ARCHIVE=$1.tar.gz
+EXPORTED_ARCHIVE=`readlink -f $1.tar.gz`
 CURRENT_DIR=`pwd`
 
 #if script passed in parameter doesn't exists
