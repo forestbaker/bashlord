@@ -22,6 +22,7 @@
 #    along with Bashlord.  If not, see <http://www.gnu.org/licenses/>.
 
 EXPORTED_ARCHIVE=$1.tar.gz
+CURRENT_DIR=`pwd`
 
 #if script passed in parameter doesn't exists
 if [ -e $EXPORTED_ARCHIVE ]
@@ -37,8 +38,12 @@ then
 	fi
 fi
 
+cd $BASHLORD_HOME/scripts
+
 #create exported archive that contains all user's scripts
-tar czvf $EXPORTED_ARCHIVE -C $BASHLORD_HOME/scripts/ $BASHLORD_HOME/scripts/*
+tar czvf $EXPORTED_ARCHIVE *.sh
+
+cd $CURRENT_DIR
 
 #output success message
 echo "Scripts exported to $EXPORTED_ARCHIVE"
