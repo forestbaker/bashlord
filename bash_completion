@@ -1,0 +1,51 @@
+
+_completeByAvailableScripts()
+{
+	    local scripts=$(for SCRIPT in `ls $BASHLORD_HOME/scripts/`; do echo $SCRIPT | sed -e 's/\.sh$//' ; done )
+	    COMPREPLY=( $(compgen -W "${scripts}" -- ${cur}) )
+}
+_blord()
+{
+       	local cur prev
+
+       	COMPREPLY=()
+       	cur=${COMP_WORDS[COMP_CWORD]}
+	prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+	case "${prev}" in
+	delete)
+	    _completeByAvailableScripts
+	    ;;
+	edit)
+	    _completeByAvailableScripts
+            return 0
+            ;;
+	add)
+	    return 0;
+	    ;;
+	delete-all)
+	    return 0;
+	    ;;
+	help)
+	    return 0;
+	    ;;
+	export)
+	    return 0;
+	    ;;
+	reload)
+	    return 0;
+	    ;;
+	list)
+	    return 0;
+	    ;;
+	version)
+	    return 0;
+	    ;;
+        *)
+        ;;
+    	esac
+
+       COMPREPLY=( $( compgen -W '$( command ls $BASHLORD_HOME/core/bashlord-*.sh \
+		| sed -e 's/\.sh$//' -e 's/^.*bashlord-//' )' -- $cur  ) )
+}
+complete -F _blord blord
