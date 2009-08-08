@@ -13,7 +13,7 @@ if [ -f ~/.bashlord/bashrc ]; then
     . ~/.bashlord/bashrc
 fi
 }}}
-# Reload your bash environment 
+ # Reload your bash environment 
 {{{
 . ~/.bashrc
 }}}
