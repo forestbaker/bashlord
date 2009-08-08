@@ -49,3 +49,4 @@ _blord()
 		| sed -e 's/\.sh$//' -e 's/^.*bashlord-//' )' -- $cur  ) )
 }
 complete -F _blord blord
+complete -F _blord bashlord
